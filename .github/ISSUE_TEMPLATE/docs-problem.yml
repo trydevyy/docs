@@ -1,0 +1,23 @@
+name: Documentation problem
+description: Report inaccurate, outdated, or broken documentation
+title: "Docs: "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or Markdown path
+      placeholder: https://www.devyy.dev/docs/installation/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+      description: Quote the relevant section and describe what you expected to find.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Version and platform
+      description: Include the Devyy version, operating system, or steps to reproduce if relevant. Remove credentials and private data.
